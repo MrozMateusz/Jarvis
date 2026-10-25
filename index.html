@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis – osobisty asystent</title>
+<meta name="description" content="Jarvis – osobisty asystent głosowy i galaktyka notatek, działający na Twoim komputerze.">
+<style>
+  :root { --bg:#ffffff; --fg:#1b1f2a; --muted:#5b6475; --card:#f4f6fa; --line:#dfe3ec; --accent:#3b5bdb; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0b0e17; --fg:#e8ecff; --muted:#9aa3bd; --card:#141a29; --line:#232b40; --accent:#8ea4ff; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:2rem; margin:0 0 4px; letter-spacing:.02em; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; }
+  .lead { color:var(--muted); margin:0 0 24px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:12px 0; }
+  ul { padding-left:1.2em; } li { margin:4px 0; }
+  a { color:var(--accent); }
+  nav { display:flex; gap:16px; flex-wrap:wrap; margin:0 0 28px; font-size:.95rem; }
+  footer { margin-top:48px; color:var(--muted); font-size:.85rem; border-top:1px solid var(--line); padding-top:16px; }
+  hr { border:0; border-top:1px solid var(--line); margin:40px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Jarvis</h1>
+  <p class="lead">Osobisty asystent głosowy i „galaktyka” notatek, działający na Twoim własnym komputerze i telefonie.</p>
+  <nav><a href="privacy.html">Polityka prywatności</a><a href="#en">English</a></nav>
+
+  <h2>Co to jest</h2>
+  <p>Jarvis to aplikacja, którą każdy uruchamia u siebie — na komputerze z Windows albo na telefonie z Androidem.
+     Twoje notatki pokazuje jako trójwymiarową mapę, odpowiada na pytania, przypomina o sprawach, prowadzi plan dnia
+     i listy. Nie ma żadnego serwera Jarvisa: wszystko dzieje się na Twoim urządzeniu.</p>
+
+  <h2>Logowanie przez Google (dobrowolne)</h2>
+  <div class="card">
+    <p>Przycisk „Zaloguj do Google” pozwala Jarvisowi — tylko na Twoim urządzeniu — korzystać z:</p>
+    <ul>
+      <li><b>Kalendarza Google</b> — czytanie wydarzeń i dodawanie nowych, zawsze dopiero po Twoim „tak”;</li>
+      <li><b>YouTube</b> (tylko odczyt) — wyszukiwanie filmów jako Ty;</li>
+      <li><b>Gmaila</b> — tylko jeśli osobno klikniesz „Dodaj też Gmaila”: czytanie poczty i tworzenie szkiców.
+          Jarvis nigdy nie wysyła ani nie usuwa wiadomości.</li>
+    </ul>
+    <p>Dane logowania zostają na Twoim urządzeniu. Szczegóły: <a href="privacy.html">polityka prywatności</a>.</p>
+  </div>
+
+  <h2>Kontakt</h2>
+  <p>Pytania i prośby: <a href="mailto:kontakt.WoxiQgmail.com">kontakt.WoxiQgmail.com</a></p>
+
+  <hr>
+  <section id="en" lang="en">
+    <h1>Jarvis</h1>
+    <p class="lead">A personal voice assistant and a 3D "galaxy" of your notes that runs on your own computer and phone.</p>
+    <p>Everyone runs Jarvis on their own device (Windows PC or Android phone). There is no Jarvis server: your notes,
+       reminders and plans stay on your device.</p>
+    <h2>Sign in with Google (optional)</h2>
+    <ul>
+      <li><b>Google Calendar</b> — read events and add new ones, only after you confirm;</li>
+      <li><b>YouTube</b> (read-only) — search videos as you;</li>
+      <li><b>Gmail</b> — only if you separately choose "Add Gmail too": read mail and create drafts. Jarvis never sends
+          or deletes mail.</li>
+    </ul>
+    <p>See the <a href="privacy.html#en">privacy policy</a>. Contact: <a href="mailto:kontakt.WoxiQ@gmail.com">kontakt.WoxiQgmail.com</a></p>
+  </section>
+
+  <footer>Jarvis · <a href="privacy.html">Polityka prywatności / Privacy policy</a></footer>
+</main>
+</body>
+</html>
