@@ -77,6 +77,43 @@
      PIN gościa i PIN właściciela (wyjście z trybu gościa) przechowywane są lokalnie; gość nie widzi sejfu, dziennika, maili,
      wydatków ani prywatnych notatek. Odcisk palca sprawdza sam Android — Jarvis dostaje tylko informację „to właściciel”.</p>
 
+  <h2>3e. Spiżarnia, pożyczki, długi, auto, pendrive, telefon → PC</h2>
+  <p>Terminy ważności, pożyczone rzeczy, długi, rośliny, zwierzaki i dane auta są zapisywane tylko lokalnie (notes/extras) i nie
+     trafiają do galaktyki ani do żadnego AI. Życzenia znajomych trafiają na kartę osoby. Kopia na pendrive jest zaszyfrowana
+     Twoim hasłem kopii i nie zawiera sejfu, kluczy ani logowań. Sterowanie komputerem z telefonu jest domyślnie wyłączone; gdy
+     je włączysz, telefon wysyła do PC w Twojej sieci domowej (z Twoim PIN-em) tylko polecenia blokady, uśpienia, wyłączenia,
+     głośności i muzyki. Eksport do Obsidiana to kopia na Twoim PC, bez sejfu i dziennika.</p>
+
+  <h2>3f. Leki, treningi, liczniki, dokumenty, hasła, czytanie stron</h2>
+  <p>Leki, treningi, odczyty liczników, daty ważności dokumentów (bez numerów), wywóz śmieci, obowiązki domowe i lista do
+     obejrzenia są zapisywane tylko lokalnie (notes/extras) i nie trafiają do galaktyki ani do żadnego AI. Hasła z „wymyśl hasło”
+     powstają na Twoim urządzeniu i od razu trafiają do zaszyfrowanego sejfu. Link „udostępnij obowiązki” pokazuje w sieci domowej
+     tylko, kto dziś co robi. Przy „przeczytaj mi ten artykuł” Jarvis pobiera tylko tę publiczną stronę; przy pakowaniu do serwisu
+     pogody idzie tylko nazwa miejsca. Menu na tydzień układa Twój mózg AI na podstawie list w domu i ulubionych dań.</p>
+
+  <h2>3g. Sen, nastrój, woda, parking, urlop, skany dokumentów, poczta, RSS, domowa tablica</h2>
+  <p>Dziennik snu, nastrój, woda, miejsce parkowania, serwis domowy, urlop, egzaminy, wiadomości dla domowników i obserwowane
+     strony są zapisywane tylko lokalnie (notes/extras) i nie trafiają do galaktyki ani do żadnego AI. Skany dokumentów („zeskanuj
+     dowód do sejfu”) są szyfrowane w sejfie, nigdy nie trafiają do AI, na telefonie otwierają się dopiero po odcisku palca
+     i znikają z ekranu po 2 minutach. Do Open-Meteo (pogoda, powietrze, wschód słońca, czas na świecie) idzie tylko nazwa miasta.
+     Poczta Gmail jest tylko czytana; zapisany załącznik staje się Twoją notatką. Obserwowane strony pobierane są jako publiczny
+     kanał RSS. Domowa tablica w sieci domowej pokazuje tylko zakupy, obowiązki na dziś, wiadomości, wywóz śmieci i pogodę.</p>
+
+  <h2>3h. Sterowanie telefonem</h2>
+  <p>Latarka, dźwięk, budzik, jasność, bateria i otwieranie aplikacji działają w samym telefonie. Kontakty są czytane tylko
+     w telefonie, gdy prosisz „zadzwoń do …” albo „napisz SMS do …” — Jarvis jedynie otwiera telefon lub SMS z numerem
+     i tekstem, a dzwonisz i wysyłasz Ty (aplikacja nie ma uprawnienia do samodzielnego dzwonienia ani wysyłania SMS-ów).
+     Telefon i komputer wymieniają w sieci domowej (z PIN-em) tylko: stan baterii, „znajdź mój telefon”, link lub tekst,
+     który sam wysyłasz, i schowek na Twoje polecenie. Trasa w Mapach Google: do Google idzie tylko cel, o który prosisz.</p>
+
+  <h2>3i. Połączenia, powiadomienia, kroki, zdrowie, sieć domowa</h2>
+  <p>Historia połączeń, powiadomienia i licznik kroków są czytane tylko w telefonie i tylko, gdy na to pozwolisz w Androidzie;
+     powiadomienia trzymane są wyłącznie w pamięci (bez zapisu), a kody (BLIK, SMS-y weryfikacyjne) nigdy nie są czytane na głos.
+     Dziennik zdrowia, kroki, tryby miejsc, ogród, prezenty i nazwy urządzeń w sieci zapisują się lokalnie (notes/extras) i nie
+     trafiają do galaktyki, do żadnego AI ani do gości. Przy kodzie kreskowym do Open Food Facts idzie tylko numer kodu; przy czasie
+     dojazdu (gdy go włączysz) do OpenStreetMap idą tylko cel i punkt domu. Pliki i zdjęcia między telefonem a komputerem płyną
+     wyłącznie w sieci domowej, z PIN-em. „Nie zapisuj tej rozmowy” wyłącza historię i uczenie się na godzinę.</p>
+
   <h2>4. Usługa AI (Twój „mózg”)</h2>
   <p>Żeby odpowiedzieć na pytanie, Jarvis może przekazać potrzebny fragment danych (np. temat i fragment maila, o który
      pytasz) do usługi AI wybranej i skonfigurowanej przez Ciebie (np. Anthropic, OpenAI, OpenRouter albo lokalny model
@@ -158,6 +195,43 @@
        Currency rates come from the public NBP API and sales from your public Steam wishlist, without any of your data. The guest
        PIN and the owner PIN (to leave guest mode) are stored locally; a guest cannot see the vault, journal, mail, spending or
        private notes. Fingerprints are checked by Android itself; Jarvis only learns "this is the owner".</p>
+
+    <h2>3e. Pantry, loans, debts, the car, the pendrive, phone → PC</h2>
+    <p>Use-by dates, lent things, debts, plants, pets and car data are stored only locally (notes/extras) and never go to the
+       galaxy or any AI. Friends' wishes go on that person's card. The pendrive backup is encrypted with your backup password and
+       has no vault, keys or logins. Controlling the PC from the phone is off by default; when on, the phone sends the PC on your
+       home network (with your PIN) only lock, sleep, shutdown, volume and music commands. The Obsidian export is a copy on your
+       PC without the vault and journal.</p>
+
+    <h2>3f. Medicines, workouts, meters, documents, passwords, reading pages</h2>
+    <p>Medicines, workouts, meter readings, document expiry dates (no numbers), bin days, chores and the watchlist are stored only
+       locally (notes/extras) and never go to the galaxy or any AI. Passwords from "generate a password" are made on your device and
+       go straight into the encrypted vault. The shared chores link shows only who does what today on your home network. "Read me
+       this article" fetches only that public page; packing sends only the place name to the weather service. The weekly menu is
+       planned by your AI brain from your home lists and favourite dishes.</p>
+
+    <h2>3g. Sleep, mood, water, parking, leave, document scans, mail, RSS, household board</h2>
+    <p>The sleep log, mood, water, parking spot, home maintenance, leave, exams, household messages and followed sites are stored
+       only locally (notes/extras) and never go to the galaxy or any AI. Document scans ("scan my ID into the vault") are encrypted in
+       the vault, never sent to an AI, open on the phone only after your fingerprint and leave the screen after 2 minutes. Only the
+       city name goes to Open-Meteo (weather, air, sunrise, world time). Gmail is read only; a saved attachment becomes your note.
+       Followed sites are fetched as public RSS feeds. The household board on your home network shows only shopping, today's chores,
+       messages, bin days and the weather.</p>
+
+    <h2>3h. Phone control</h2>
+    <p>The flashlight, sound, alarm, brightness, battery and opening apps work on the phone itself. Contacts are read only on the
+       phone when you say "call …" or "text …" — Jarvis only opens the dialer or the SMS app with the number and text, and you
+       press call / send (the app has no permission to call or text by itself). The phone and the PC exchange on your home network
+       (with the PIN) only: the battery level, "find my phone", a link or text you send, and the clipboard when you ask. Directions
+       in Google Maps send Google only the destination you ask for.</p>
+
+    <h2>3i. Calls, notifications, steps, health, the home network</h2>
+    <p>The call log, notifications and the step counter are read on the phone only, and only after you allow it in Android;
+       notifications are kept in memory only, and codes (BLIK, verification texts) are never read aloud. The health diary, steps,
+       place modes, the garden, gifts and device names are stored locally (notes/extras) and never go to the galaxy, any AI or guests.
+       A bar code sends Open Food Facts only the number; travel time (when you turn it on) sends OpenStreetMap only the destination and
+       your home point. Files and photos between the phone and the PC travel only on your home network, with the PIN.
+       "Don't remember this conversation" turns off history and learning for an hour.</p>
 
     <h2>4. The AI service (your "brain")</h2>
     <p>To answer a request, Jarvis may send the needed piece of data (e.g. the subject and an excerpt of an e-mail you ask
