@@ -70,6 +70,13 @@
      czytany na Twoim urządzeniu; do Twojej usługi AI mogą trafić tylko zamaskowane opisy transakcji, których kategorii nie
      rozpoznał sam. Czas spędzony w programach na PC jest liczony i zapisywany wyłącznie lokalnie.</p>
 
+  <h2>3d. Telegram, dom, goście, kursy walut, Steam</h2>
+  <p>Jeśli połączysz bota Telegram, Twoje wiadomości do bota i odpowiedzi Jarvisa przechodzą przez serwery Telegrama; bot odpowiada
+     tylko Tobie, a sejf, dziennik, ustawienia i komputer nie są przez niego dostępne. Home Assistant jest wywoływany tylko w Twojej
+     sieci. Kursy walut pobierane są z publicznego API NBP, a promocje z publicznej listy życzeń Steam — bez Twoich danych.
+     PIN gościa i PIN właściciela (wyjście z trybu gościa) przechowywane są lokalnie; gość nie widzi sejfu, dziennika, maili,
+     wydatków ani prywatnych notatek. Odcisk palca sprawdza sam Android — Jarvis dostaje tylko informację „to właściciel”.</p>
+
   <h2>4. Usługa AI (Twój „mózg”)</h2>
   <p>Żeby odpowiedzieć na pytanie, Jarvis może przekazać potrzebny fragment danych (np. temat i fragment maila, o który
      pytasz) do usługi AI wybranej i skonfigurowanej przez Ciebie (np. Anthropic, OpenAI, OpenRouter albo lokalny model
@@ -144,6 +151,13 @@
     <p>When you ask to watch a price, Jarvis fetches that product's public page once a day. A bank statement (CSV) is read on
        your device; only masked descriptions of transactions it could not categorize itself may go to your AI service.
        Time spent in programs on the PC is counted and stored only locally.</p>
+
+    <h2>3d. Telegram, home, guests, currency rates, Steam</h2>
+    <p>If you connect a Telegram bot, your messages to it and Jarvis's replies pass through Telegram's servers; the bot answers only
+       you, and the vault, journal, settings and PC are never available through it. Home Assistant is called only on your network.
+       Currency rates come from the public NBP API and sales from your public Steam wishlist, without any of your data. The guest
+       PIN and the owner PIN (to leave guest mode) are stored locally; a guest cannot see the vault, journal, mail, spending or
+       private notes. Fingerprints are checked by Android itself; Jarvis only learns "this is the owner".</p>
 
     <h2>4. The AI service (your "brain")</h2>
     <p>To answer a request, Jarvis may send the needed piece of data (e.g. the subject and an excerpt of an e-mail you ask
