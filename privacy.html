@@ -54,8 +54,21 @@
 
   <h2>3a. Lokalizacja i historia rozmów</h2>
   <p>Jeśli zapiszesz miejsce („zapamiętaj to miejsce jako dom”) albo przypomnienie w miejscu, aplikacja na telefonie sprawdza
-     swoją lokalizację, gdy jest otwarta, i porównuje ją z Twoimi miejscami — na urządzeniu. Lokalizacja nie jest nigdzie wysyłana.
+     swoją lokalizację, gdy jest otwarta, i porównuje ją z Twoimi miejscami — na urządzeniu. Jeśli pozwolisz na lokalizację „zawsze”,
+     system Android sam pilnuje tylko tych zapisanych miejsc (alert zbliżeniowy) także przy zamkniętej aplikacji. Lokalizacja nie jest nigdzie wysyłana.
+     Treści, które udostępnisz Jarvisowi z innych aplikacji („Udostępnij → Jarvis”), trafiają tylko na Twoje urządzenie
+     (i do Twojej usługi AI, gdy poprosisz o streszczenie lub fiszki).
      Historia rozmów z Jarvisem („o czym rozmawialiśmy wczoraj?”) jest zapisywana tylko na Twoim urządzeniu.</p>
+
+  <h2>3b. Mowa i paczki</h2>
+  <p>Domyślnie mowę rozpoznaje Twoja przeglądarka albo telefon. Jeśli w Ustawieniach wybierzesz „openai”, nagranie każdego
+     wypowiedzianego zdania jest wysyłane do OpenAI z Twoim własnym kluczem tylko po to, żeby zamienić je na tekst
+     (nigdy podczas czekania na „Hej Jarvis”). Jeśli poprosisz o śledzenie paczki InPost, do InPost trafia wyłącznie numer przesyłki.</p>
+
+  <h2>3c. Ceny, wyciągi z banku, czas przy komputerze</h2>
+  <p>Gdy poprosisz o pilnowanie ceny, Jarvis raz na dobę pobiera publiczną stronę tego produktu. Wyciąg z banku (CSV) jest
+     czytany na Twoim urządzeniu; do Twojej usługi AI mogą trafić tylko zamaskowane opisy transakcji, których kategorii nie
+     rozpoznał sam. Czas spędzony w programach na PC jest liczony i zapisywany wyłącznie lokalnie.</p>
 
   <h2>4. Usługa AI (Twój „mózg”)</h2>
   <p>Żeby odpowiedzieć na pytanie, Jarvis może przekazać potrzebny fragment danych (np. temat i fragment maila, o który
@@ -118,7 +131,19 @@
 
     <h2>3a. Location and conversation history</h2>
     <p>If you save a place or a place reminder, the phone app checks its location while it is open and compares it with your
-       places on the device. Your location is not sent anywhere. Your conversation history with Jarvis is stored only on your device.</p>
+       places on the device. If you allow location "all the time", Android itself watches only those saved places (a proximity
+       alert) also with the app closed. Your location is not sent anywhere. What you share to Jarvis from other apps stays on your device
+       (and goes to your AI service only when you ask for a summary or flashcards). Your conversation history with Jarvis is stored only on your device.</p>
+
+    <h2>3b. Speech and parcels</h2>
+    <p>By default your browser or phone recognizes speech. If you choose "openai" in Settings, the recording of each spoken
+       sentence is sent to OpenAI with your own key only to turn it into text (never while waiting for "Hey Jarvis"). If you ask
+       to track an InPost parcel, only the tracking number is sent to InPost.</p>
+
+    <h2>3c. Prices, bank statements, screen time</h2>
+    <p>When you ask to watch a price, Jarvis fetches that product's public page once a day. A bank statement (CSV) is read on
+       your device; only masked descriptions of transactions it could not categorize itself may go to your AI service.
+       Time spent in programs on the PC is counted and stored only locally.</p>
 
     <h2>4. The AI service (your "brain")</h2>
     <p>To answer a request, Jarvis may send the needed piece of data (e.g. the subject and an excerpt of an e-mail you ask
